@@ -1,0 +1,65 @@
+body {
+    background-image: url("../imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: darkgray;
+    color: wheat;
+    font-family: "Montserrat", sans-serif;;
+}
+
+#toolbar {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bolder;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#home, #menu, #contact {
+    padding: 15px;
+    font-weight: bolder;
+}
+
+#home:hover, #menu:hover, #contact:hover {
+    opacity: 50%;
+}
+
+#logo {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15px;
+    text-align: center;
+}
+
+#mainLogo{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#underLogo {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+#mainContent {
+    margin : 15px;
+}
+
+#menuCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.menuPosition {
+    font-size: 25px;
+}
+
+.menuInfo {
+    font-size: 15px;
+}
