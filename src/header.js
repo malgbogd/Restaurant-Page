@@ -1,4 +1,4 @@
-export const createHeader = (()=> {
+export function createHeader() {
   const page = document.getElementById("content");
 
   const toolbar = document.createElement("div");
@@ -14,17 +14,20 @@ export const createHeader = (()=> {
   underLogo.id= "underLogo";
   underLogo.innerHTML = "Your favorite!"
 
-  const home = document.createElement("div");
+  home = document.createElement("div");
   home.id ="home";
   home.innerHTML = "HOME";
 
-  const menu = document.createElement("div");
+  menu = document.createElement("div");
   menu.id="menu";
   menu.innerHTML = "MENU"
 
-  const contact = document.createElement("div");
+  contact = document.createElement("div");
   contact.id = "contact"
   contact.innerHTML = "CONTACT"
+
+  infoTab = document.createElement("div");
+  infoTab.id= "infoTab"
 
   page.appendChild(toolbar);
   toolbar.appendChild(logo);
@@ -33,6 +36,7 @@ export const createHeader = (()=> {
   toolbar.appendChild(home);
   toolbar.appendChild(menu);
   toolbar.appendChild(contact);
+  page.appendChild(infoTab);
 
-return {home, menu, contact};
-})();
+return {home, menu, contact, infoTab};
+};

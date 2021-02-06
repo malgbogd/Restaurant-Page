@@ -46,10 +46,6 @@ body {
     font-weight: lighter;
 }
 
-#mainContent {
-    margin : 15px;
-}
-
 #menuCard {
     display: flex;
     flex-direction: column;
@@ -58,8 +54,28 @@ body {
 
 .menuPosition {
     font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .menuInfo {
     font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#infoTab {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo {
+text-align: center;
+margin-top: 15px;
+}
+
+#homeInfo {
+    margin-top: 50px;
+    text-align: center;
 }

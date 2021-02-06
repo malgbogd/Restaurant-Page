@@ -1,5 +1,5 @@
-export const showMenu = (()=> {
-    const page = document.getElementById("content");
+export function showMenu() {
+    infoTab.innerHTML = "";
 
     const menu = document.createElement("div");
     menu.id = "menuCard";
@@ -37,8 +37,6 @@ export const showMenu = (()=> {
     drinkInfo.className = "menuInfo";
     drinkInfo.innerHTML = "With or without alcohol?";
 
-
-
     menu.appendChild(main);
     menu.appendChild(mainInfo);
     menu.appendChild(soup);
@@ -47,5 +45,6 @@ export const showMenu = (()=> {
     menu.appendChild(dessertInfo);
     menu.appendChild(drink);
     menu.appendChild(drinkInfo);
-    page.appendChild(menu);
-})();
+    infoTab.appendChild(menu);
+
+}
